@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆成功</title>
+</head>
+<body>
+    登陆成功
+    <br>
+    <div shiro:hasPermission="user:add">
+        测试页面：<a href="/test">666</a>
+    </div>
+
+    <br>
+    <div shiro:hasPermission="user:add1">
+        测试页面：<a href="/test1">777</a>
+    </div>
+
+</body>
+</html>
